@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AirBnB</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h2>Number of Hosts Signed Up by Year (all cities)</h2>
+    <p>Numbers on hover reflect the total number of hosts.</p>
+    <div id="plot"></div>
+    <h2>Number of Hosts Signed Up by Year by City</h2>
+    <p>Numbers on hover reflect the total number of hosts.</p>
+    <select id="selDataset">
+        <option value="Bangkok">Bangkok</option>
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="Istanbul">Istanbul</option>
+        <option value="London">London</option>
+        <option value="New York City">New York City</option>
+        <option value="Paris">Paris</option>
+        <option value="Singapore">Singapore</option>
+    </select>
+    <div id="plot2"></div>
+
+    <h2>Superhosts by City and by Year</h2>
+    <p>Numbers on hover reflect the total number of hosts.</p>
+    <select id="selDataset2">
+        <option value="Bangkok">Bangkok</option>
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="Istanbul">Istanbul</option>
+        <option value="London">London</option>
+        <option value="New York City">New York City</option>
+        <option value="Paris">Paris</option>
+        <option value="Singapore">Singapore</option>
+    </select>
+    <div id="plot3"></div>
+
+    <h2>Avg Price by Superhost, City, and Year</h2>
+    <p>Numbers on hover reflect the average price of a listing.</p>
+    <select id="selDataset3">
+        <option value="Bangkok">Bangkok</option>
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="Istanbul">Istanbul</option>
+        <option value="London">London</option>
+        <option value="New York City">New York City</option>
+        <option value="Paris">Paris</option>
+        <option value="Singapore">Singapore</option>
+    </select>
+    <div id="plot4"></div>
+
+
+    <script src="allhosts_year_data.js"></script>
+    <script src="hosts_city_data.js"></script>
+    <script src="yearly_super_city.js"></script>
+    <script src="super_cost_data.js"></script>
+    <script src="plots.js"></script>
+    <!-- <script src="refactored.js"></script> -->
+</body>
+</html>
